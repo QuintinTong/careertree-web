@@ -1,0 +1,14 @@
+<div class="page-turner-wrap">
+    <div class="page-turner" ng-if="1 < pages.length">
+        <a href="" class="page-turner-item prev" ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }" ng-click="setCurrent(pagination.current - 1)">
+            <i class="icon icon-left-black"></i>
+            <span class="hidden-text">上一页</span>
+        </a>
+        <a href="" ng-click="setCurrent(pageNumber)" class="page-turner-item" ng-repeat="pageNumber in pages track by $index" ng-class="{ current : pagination.current == pageNumber, disabled : pageNumber == '...' }">{{ pageNumber }}</a>
+
+        <a href="" class="page-turner-item next" ng-if="directionLinks"  ng-class="{ disabled : pagination.current == pagination.last }" ng-click="setCurrent(pagination.current + 1)">
+            <span class="hidden-text">下一页</span>
+            <i class="icon icon-right-black"></i>
+        </a>
+    </div>
+</div>

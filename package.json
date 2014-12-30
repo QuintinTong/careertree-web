@@ -1,0 +1,17 @@
+{
+  "name": "wegenart-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "wegenart",
+  "repository": "http://gitlab.ramy-inc.com/design-team/wegenart",
+  "license": "MIT",
+  "devDependencies": {
+    "connect": "^3.0.2",
+    "connect-history-api-fallback": "0.0.5",
+    "gulp": "^3.8.9",
+    "serve-static": "^1.7.1"
+  },
+  "scripts": {
+    "start": "gulp server"
+  }
+}
